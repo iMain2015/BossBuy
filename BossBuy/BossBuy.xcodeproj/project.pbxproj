@@ -50,6 +50,9 @@
 		18809C8A1B43BBFC002D3548 /* ShopTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18809C881B43BBFC002D3548 /* ShopTableViewController.xib */; };
 		18809C8D1B43C88F002D3548 /* MainHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18809C8C1B43C88F002D3548 /* MainHeaderView.m */; };
 		18809C901B43E9CB002D3548 /* AdScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18809C8F1B43E9CB002D3548 /* AdScrollView.m */; };
+		230BD7C71B441BBF00652FF8 /* location_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 230BD7C41B441BBF00652FF8 /* location_icon.png */; };
+		230BD7C81B441BBF00652FF8 /* location_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 230BD7C51B441BBF00652FF8 /* location_icon@2x.png */; };
+		230BD7C91B441BBF00652FF8 /* location_icon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 230BD7C61B441BBF00652FF8 /* location_icon@3x.png */; };
 		79AB4CB07EFC3F586BA19943 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4DCE40A8DE0D01C273F652 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -128,6 +131,9 @@
 		18809C8C1B43C88F002D3548 /* MainHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainHeaderView.m; sourceTree = "<group>"; };
 		18809C8E1B43E9CB002D3548 /* AdScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdScrollView.h; sourceTree = "<group>"; };
 		18809C8F1B43E9CB002D3548 /* AdScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdScrollView.m; sourceTree = "<group>"; };
+		230BD7C41B441BBF00652FF8 /* location_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = location_icon.png; sourceTree = "<group>"; };
+		230BD7C51B441BBF00652FF8 /* location_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "location_icon@2x.png"; sourceTree = "<group>"; };
+		230BD7C61B441BBF00652FF8 /* location_icon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "location_icon@3x.png"; sourceTree = "<group>"; };
 		3E4DCE40A8DE0D01C273F652 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DCCF0165D4BCC3021581B24 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		69E8AA8BAAE2F94534BF725D /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -302,10 +308,10 @@
 			isa = PBXGroup;
 			children = (
 				18809C4C1B438B25002D3548 /* Main */,
+				18809C4F1B438B25002D3548 /* Shop */,
 				18809C4B1B438B25002D3548 /* Commodity */,
 				18809C4D1B438B25002D3548 /* News */,
 				18809C4E1B438B25002D3548 /* Setting */,
-				18809C4F1B438B25002D3548 /* Shop */,
 				18809C471B438878002D3548 /* TabBar */,
 			);
 			path = ViewController;
@@ -398,6 +404,9 @@
 		18809C581B43BA76002D3548 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				230BD7C41B441BBF00652FF8 /* location_icon.png */,
+				230BD7C51B441BBF00652FF8 /* location_icon@2x.png */,
+				230BD7C61B441BBF00652FF8 /* location_icon@3x.png */,
 				18809C591B43BA76002D3548 /* main_tabbar_icon.png */,
 				18809C5A1B43BA76002D3548 /* main_tabbar_icon@2x.png */,
 				18809C5B1B43BA76002D3548 /* main_tabbar_icon@3x.png */,
@@ -516,10 +525,12 @@
 				18809C6A1B43BA76002D3548 /* main_tabbar_icon@3x.png in Resources */,
 				18809C851B43BBEB002D3548 /* SettingViewController.xib in Resources */,
 				18809C6F1B43BA76002D3548 /* setting_tabbar_icon@2x.png in Resources */,
+				230BD7C91B441BBF00652FF8 /* location_icon@3x.png in Resources */,
 				18809C701B43BA76002D3548 /* setting_tabbar_icon@3x.png in Resources */,
 				181620EC1B3D25AD0031C1F3 /* Main.storyboard in Resources */,
 				18809C6E1B43BA76002D3548 /* setting_tabbar_icon.png in Resources */,
 				18809C6D1B43BA76002D3548 /* news_tabbar_icon@3x.png in Resources */,
+				230BD7C81B441BBF00652FF8 /* location_icon@2x.png in Resources */,
 				18809C681B43BA76002D3548 /* main_tabbar_icon.png in Resources */,
 				18809C711B43BA76002D3548 /* shangpin_tabbar_icon.png in Resources */,
 				18809C761B43BA76002D3548 /* shop_tabbar_icon@3x.png in Resources */,
@@ -528,6 +539,7 @@
 				18809C7B1B43BBBB002D3548 /* CommodityViewController.xib in Resources */,
 				181620EE1B3D25AD0031C1F3 /* Images.xcassets in Resources */,
 				18809C6B1B43BA76002D3548 /* news_tabbar_icon.png in Resources */,
+				230BD7C71B441BBF00652FF8 /* location_icon.png in Resources */,
 				18809C751B43BA76002D3548 /* shop_tabbar_icon@2x.png in Resources */,
 				18809C8A1B43BBFC002D3548 /* ShopTableViewController.xib in Resources */,
 			);

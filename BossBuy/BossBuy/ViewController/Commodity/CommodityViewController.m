@@ -7,7 +7,7 @@
 //
 
 #import "CommodityViewController.h"
-
+#import <UIBarButtonItem+BlocksKit.h>
 @interface CommodityViewController ()
 
 @end
@@ -17,6 +17,31 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    
+    [self setBarButton];
+    
+}
+
+
+
+-(void)setBarButton{
+    
+    UISearchBar *titleSearchBar = [[UISearchBar alloc]initWithFrame:CGRectMake(0, 0, self.navigationController.navigationItem.titleView.frame.size.width, self.navigationController.navigationItem.titleView.frame.size.height)];
+    titleSearchBar.placeholder = @"商家，商品";
+    
+    self.navigationItem.titleView  =titleSearchBar;
+    
+    
+    UIBarButtonItem *myLocationBar  = [[UIBarButtonItem alloc]bk_initWithImage:[UIImage imageNamed:@"location_icon"] style:UIBarButtonItemStylePlain handler:^(id sender) {
+        
+    }];
+    
+    UIBarButtonItem *myLocationCityBar  = [[UIBarButtonItem alloc]bk_initWithTitle:@"郑州" style:UIBarButtonItemStylePlain handler:^(id sender) {
+        
+    }];
+    
+    self.navigationItem.rightBarButtonItem= myLocationBar;
+    self.navigationItem.leftBarButtonItem = myLocationCityBar;
 }
 
 - (void)didReceiveMemoryWarning {

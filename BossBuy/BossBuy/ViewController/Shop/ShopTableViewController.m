@@ -7,7 +7,7 @@
 //
 
 #import "ShopTableViewController.h"
-
+#import <UIBarButtonItem+BlocksKit.h>
 @interface ShopTableViewController ()
 
 @end
@@ -22,7 +22,30 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    
+    [self setBarButton];
 }
+
+-(void)setBarButton{
+    
+    UISearchBar *titleSearchBar = [[UISearchBar alloc]initWithFrame:CGRectMake(0, 0, self.navigationController.navigationItem.titleView.frame.size.width, self.navigationController.navigationItem.titleView.frame.size.height)];
+    titleSearchBar.placeholder = @"商家，商品";
+    
+    self.navigationItem.titleView  =titleSearchBar;
+    
+    
+    UIBarButtonItem *myLocationBar  = [[UIBarButtonItem alloc]bk_initWithImage:[UIImage imageNamed:@"location_icon"] style:UIBarButtonItemStylePlain handler:^(id sender) {
+        
+    }];
+    
+    UIBarButtonItem *myLocationCityBar  = [[UIBarButtonItem alloc]bk_initWithTitle:@"郑州" style:UIBarButtonItemStylePlain handler:^(id sender) {
+        
+    }];
+    
+    self.navigationItem.rightBarButtonItem= myLocationBar;
+    self.navigationItem.leftBarButtonItem = myLocationCityBar;
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

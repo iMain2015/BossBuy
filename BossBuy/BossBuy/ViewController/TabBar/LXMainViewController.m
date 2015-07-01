@@ -18,6 +18,10 @@
 -(void)dealloc{
     
     _mainTableViewController = nil;
+    _commodityViewController = nil;
+    _shopTableViewController = nil;
+    _newsTableViewController = nil;
+    _settingViewController = nil;
 }
 
 
