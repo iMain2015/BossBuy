@@ -1,0 +1,13 @@
+pod "AFNetworking", "~> 2.0"
+pod 'SVWebViewController'
+pod 'SSKeychain'
+pod 'SDWebImage', '~>3.7'
+pod 'UITableView+FDTemplateLayoutCell', '~> 1.3'
+pod 'IQKeyboardManager'
+pod 'FDTake'
+pod 'Toast', '~> 2.4'
+pod 'MWPhotoBrowser'
+pod 'MBProgressHUD', '~> 0.9.1'
+pod 'MagicalRecord', '~> 2.3.0'
+pod 'MJRefresh'
+pod 'RMUniversalAlert-BlocksKit', '~> 0.8'
