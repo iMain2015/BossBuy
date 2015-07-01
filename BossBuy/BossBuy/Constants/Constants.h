@@ -16,6 +16,8 @@
 
 #define ServiceAdress @"http://116.255.239.201:8080/xuezhabao/wg?json="
 
+#define SCREEN_WIDTH ([UIScreen mainScreen].bounds.size.width)
+#define SCREEN_HEIGHT ([UIScreen mainScreen].bounds.size.height)
 
 
 #define SharedApp ((AppDelegate *)[[UIApplication sharedApplication] delegate])

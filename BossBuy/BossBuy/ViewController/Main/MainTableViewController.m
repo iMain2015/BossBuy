@@ -7,7 +7,9 @@
 //
 
 #import "MainTableViewController.h"
-
+#import "MainHeaderView.h"
+#import "Constants.h"
+#import "AdScrollView.h"
 @interface MainTableViewController ()
 
 @end
@@ -23,6 +25,30 @@
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     self.title = @"主页";
+    
+    MainHeaderView *mainHeaderView= [[MainHeaderView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 100)];
+    mainHeaderView.buttonBlock = ^(UIButton*button){
+    
+        NSLog(@"%ld",button.tag);
+        
+    };
+    
+    AdScrollView *adScrollView=[[AdScrollView alloc]initWithFrame:CGRectMake(0, 50, self.view.frame.size.width, 200)];
+    adScrollView.imageArray = @[@"https://www.baidu.com/img/bdlogo.png",@"http://news.baidu.com/resource/img/logo_news_276_88.png?date=20150104"];
+    
+    adScrollView.adClick = ^(UIImageView*imageView){
+    
+        NSLog(@"图片=%ld",imageView.tag);
+    };
+    
+    UIView *headView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 300)];
+
+    [headView addSubview:mainHeaderView];
+    
+    [headView addSubview:adScrollView];
+    
+    self.tableView.tableHeaderView = headView;
+    
 
 }
 
