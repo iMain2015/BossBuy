@@ -97,33 +97,27 @@
         [imageView sd_setImageWithURL:_imageArray[i] placeholderImage:[UIImage imageNamed:@"main_tabbar_icon"]];
         
 
+        imageView.tag = i;
         
         imageView.userInteractionEnabled = YES;
         
         UITapGestureRecognizer *singleTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(photoTapped:)];
+        
         [imageView addGestureRecognizer:singleTap];//点击图片事件
 
-        
         [_scrollView addSubview:imageView];
-        
 
-
-        
     }
-    
-    
-    
+
     
     
 }
 
 -(void)photoTapped:(id)sender{
     
-   // UIImageView *imageView =(UIImageView*)sender;
+    UITapGestureRecognizer *singleTap = (UITapGestureRecognizer *)sender;
     
-  //  NSLog(@"xxxx%ld",imageView.tag);
-    
-    //_adClick(imageView);
+    _adClick((UIImageView*)singleTap.view);
 }
 
 
