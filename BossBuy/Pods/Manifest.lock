@@ -56,6 +56,7 @@ PODS:
     - SDWebImage/Core (= 3.7.2)
   - SDWebImage/Core (3.7.2)
   - SSKeychain (1.2.3)
+  - SVProgressHUD (1.1.3)
   - SVWebViewController (1.0)
   - Toast (2.4)
   - UIAlertController+Blocks (0.9)
@@ -72,6 +73,7 @@ DEPENDENCIES:
   - RMUniversalAlert-BlocksKit (~> 0.8)
   - SDWebImage (~> 3.7)
   - SSKeychain
+  - SVProgressHUD
   - SVWebViewController
   - Toast (~> 2.4)
   - UITableView+FDTemplateLayoutCell (~> 1.3)
@@ -90,6 +92,7 @@ SPEC CHECKSUMS:
   RMUniversalAlert-BlocksKit: e594d7484bd12ba80f6d09abd7506e3334ce5027
   SDWebImage: 71b7cdc1d1721d6a82ed62889030225f2c249e29
   SSKeychain: 3f42991739c6c60a9cf1bbd4dff6c0d3694bcf3d
+  SVProgressHUD: 748080e4f36e603f6c02aec292664239df5279c1
   SVWebViewController: c36dda7326e81fcae0abf5d02bf7bbf7e41be901
   Toast: 0773b8fc0e97352ca6054517bec7ebdd4110029d
   UIAlertController+Blocks: b48c673ff60726da468b32ab21bbc7683512d45b
