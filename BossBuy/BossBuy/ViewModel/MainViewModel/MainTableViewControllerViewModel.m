@@ -32,7 +32,7 @@
 
 -(UITableViewCell*)getCellForRowAtIndexPath:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
 
-    CommodityRecommendTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"CRMCELL" forIndexPath:indexPath];
+    CommodityRecommendTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:kCell forIndexPath:indexPath];
     
     [cell.commodityImageView sd_setImageWithURL:[NSURL URLWithString:@"http://i3.mifile.cn/a4/T1sxVvBQxT1RXrhCrK.jpg"]];
 

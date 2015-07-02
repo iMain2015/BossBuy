@@ -7,7 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "CommodityViewControllerViewModel.h"
 @interface CommodityViewController : UIViewController
+//一级菜单列表
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
+//二级菜单列表
+@property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
+
+@property(nonatomic,strong)CommodityViewControllerViewModel *viewModel;
 
 @end

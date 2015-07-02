@@ -9,6 +9,8 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
+static NSString *const kCell = @"CRMCELL";
+
 @interface MainTableViewControllerViewModel : NSObject
 
 @property(nonatomic,strong)NSMutableArray *dataArray;

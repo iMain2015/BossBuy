@@ -13,8 +13,6 @@
 #import <UIBarButtonItem+BlocksKit.h>
 #import "CommodityRecommendTableViewCell.h"
 
-static NSString *const kCell = @"CRMCELL";
-
 @interface MainTableViewController ()
 
 @end
