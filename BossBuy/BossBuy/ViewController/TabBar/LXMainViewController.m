@@ -19,7 +19,7 @@
     
     _mainTableViewController = nil;
     _commodityViewController = nil;
-    _shopTableViewController = nil;
+    _shopViewController = nil;
     _newsTableViewController = nil;
     _settingViewController = nil;
 }
@@ -33,7 +33,7 @@
     
     _commodityViewController = [[CommodityViewController alloc]init];
     
-    _shopTableViewController = [[ShopTableViewController alloc]init];
+    _shopViewController = [[ShopViewController alloc]init];
     
     _newsTableViewController = [[NewsTableViewController alloc]init];
     
@@ -56,7 +56,7 @@
     commodityNavigationController.tabBarItem = commodityTabBarItem;
     
     //商家
-    UINavigationController *shopNavigationController= [[UINavigationController alloc]initWithRootViewController:_shopTableViewController];
+    UINavigationController *shopNavigationController= [[UINavigationController alloc]initWithRootViewController:_shopViewController];
     
     UITabBarItem *shopTabBarItem = [[UITabBarItem alloc]initWithTitle:@"商家" image:[UIImage imageNamed:@"shop_tabbar_icon"] tag:3];
     

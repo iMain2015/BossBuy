@@ -27,12 +27,9 @@
     if (self) {
         
 
-
         
         _scrollView = [[UIScrollView alloc]initWithFrame:frame];
         
-        _scrollView.backgroundColor = [UIColor yellowColor];
-
         
         CGFloat w = frame.size.width;
         CGFloat h = frame.size.height;

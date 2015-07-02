@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "MainTableViewController.h"
 #import "CommodityViewController.h"
-#import "ShopTableViewController.h"
+#import "ShopViewController.h"
 #import "NewsTableViewController.h"
 #import "SettingViewController.h"
 @interface LXMainViewController : UITabBarController
@@ -24,7 +24,7 @@
 /**
  *  商家
  */
-@property(nonatomic,strong)ShopTableViewController *shopTableViewController;
+@property(nonatomic,strong)ShopViewController *shopViewController;
 /**
  *  资讯
  */
