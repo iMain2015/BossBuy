@@ -42,14 +42,14 @@
 		18809C761B43BA76002D3548 /* shop_tabbar_icon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18809C671B43BA76002D3548 /* shop_tabbar_icon@3x.png */; };
 		18809C7A1B43BBBB002D3548 /* CommodityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18809C781B43BBBB002D3548 /* CommodityViewController.m */; };
 		18809C7B1B43BBBB002D3548 /* CommodityViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18809C791B43BBBB002D3548 /* CommodityViewController.xib */; };
-		18809C7F1B43BBD2002D3548 /* NewsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18809C7D1B43BBD2002D3548 /* NewsTableViewController.m */; };
-		18809C801B43BBD2002D3548 /* NewsTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18809C7E1B43BBD2002D3548 /* NewsTableViewController.xib */; };
 		18809C841B43BBEB002D3548 /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18809C821B43BBEB002D3548 /* SettingViewController.m */; };
 		18809C851B43BBEB002D3548 /* SettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18809C831B43BBEB002D3548 /* SettingViewController.xib */; };
 		18809C891B43BBFC002D3548 /* ShopTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18809C871B43BBFC002D3548 /* ShopTableViewController.m */; };
 		18809C8A1B43BBFC002D3548 /* ShopTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18809C881B43BBFC002D3548 /* ShopTableViewController.xib */; };
 		18809C8D1B43C88F002D3548 /* MainHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18809C8C1B43C88F002D3548 /* MainHeaderView.m */; };
 		18809C901B43E9CB002D3548 /* AdScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18809C8F1B43E9CB002D3548 /* AdScrollView.m */; };
+		18C7C7F01B44D85400DF0409 /* NewsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C7C7EE1B44D85400DF0409 /* NewsTableViewController.m */; };
+		18C7C7F11B44D85400DF0409 /* NewsTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18C7C7EF1B44D85400DF0409 /* NewsTableViewController.xib */; };
 		230BD7C71B441BBF00652FF8 /* location_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 230BD7C41B441BBF00652FF8 /* location_icon.png */; };
 		230BD7C81B441BBF00652FF8 /* location_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 230BD7C51B441BBF00652FF8 /* location_icon@2x.png */; };
 		230BD7C91B441BBF00652FF8 /* location_icon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 230BD7C61B441BBF00652FF8 /* location_icon@3x.png */; };
@@ -118,9 +118,6 @@
 		18809C771B43BBBB002D3548 /* CommodityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommodityViewController.h; sourceTree = "<group>"; };
 		18809C781B43BBBB002D3548 /* CommodityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommodityViewController.m; sourceTree = "<group>"; };
 		18809C791B43BBBB002D3548 /* CommodityViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommodityViewController.xib; sourceTree = "<group>"; };
-		18809C7C1B43BBD2002D3548 /* NewsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsTableViewController.h; sourceTree = "<group>"; };
-		18809C7D1B43BBD2002D3548 /* NewsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsTableViewController.m; sourceTree = "<group>"; };
-		18809C7E1B43BBD2002D3548 /* NewsTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewsTableViewController.xib; sourceTree = "<group>"; };
 		18809C811B43BBEB002D3548 /* SettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
 		18809C821B43BBEB002D3548 /* SettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
 		18809C831B43BBEB002D3548 /* SettingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingViewController.xib; sourceTree = "<group>"; };
@@ -131,6 +128,9 @@
 		18809C8C1B43C88F002D3548 /* MainHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainHeaderView.m; sourceTree = "<group>"; };
 		18809C8E1B43E9CB002D3548 /* AdScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdScrollView.h; sourceTree = "<group>"; };
 		18809C8F1B43E9CB002D3548 /* AdScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdScrollView.m; sourceTree = "<group>"; };
+		18C7C7ED1B44D85400DF0409 /* NewsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsTableViewController.h; sourceTree = "<group>"; };
+		18C7C7EE1B44D85400DF0409 /* NewsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsTableViewController.m; sourceTree = "<group>"; };
+		18C7C7EF1B44D85400DF0409 /* NewsTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewsTableViewController.xib; sourceTree = "<group>"; };
 		230BD7C41B441BBF00652FF8 /* location_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = location_icon.png; sourceTree = "<group>"; };
 		230BD7C51B441BBF00652FF8 /* location_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "location_icon@2x.png"; sourceTree = "<group>"; };
 		230BD7C61B441BBF00652FF8 /* location_icon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "location_icon@3x.png"; sourceTree = "<group>"; };
@@ -307,10 +307,10 @@
 		1816210D1B3D26B90031C1F3 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				18C7C7EC1B44D83F00DF0409 /* News */,
 				18809C4C1B438B25002D3548 /* Main */,
 				18809C4F1B438B25002D3548 /* Shop */,
 				18809C4B1B438B25002D3548 /* Commodity */,
-				18809C4D1B438B25002D3548 /* News */,
 				18809C4E1B438B25002D3548 /* Setting */,
 				18809C471B438878002D3548 /* TabBar */,
 			);
@@ -320,6 +320,11 @@
 		1816210E1B3D26EB0031C1F3 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				18DD29831B44D50F00231E05 /* CommodityViewModel */,
+				18DD29841B44D50F00231E05 /* MainViewModel */,
+				18DD29851B44D50F00231E05 /* NewsViewModel */,
+				18DD29861B44D50F00231E05 /* SettingViewModel */,
+				18DD29871B44D50F00231E05 /* ShopViewModel */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -371,16 +376,6 @@
 			path = Main;
 			sourceTree = "<group>";
 		};
-		18809C4D1B438B25002D3548 /* News */ = {
-			isa = PBXGroup;
-			children = (
-				18809C7C1B43BBD2002D3548 /* NewsTableViewController.h */,
-				18809C7D1B43BBD2002D3548 /* NewsTableViewController.m */,
-				18809C7E1B43BBD2002D3548 /* NewsTableViewController.xib */,
-			);
-			path = News;
-			sourceTree = "<group>";
-		};
 		18809C4E1B438B25002D3548 /* Setting */ = {
 			isa = PBXGroup;
 			children = (
@@ -424,6 +419,51 @@
 				18809C671B43BA76002D3548 /* shop_tabbar_icon@3x.png */,
 			);
 			path = Images;
+			sourceTree = "<group>";
+		};
+		18C7C7EC1B44D83F00DF0409 /* News */ = {
+			isa = PBXGroup;
+			children = (
+				18C7C7ED1B44D85400DF0409 /* NewsTableViewController.h */,
+				18C7C7EE1B44D85400DF0409 /* NewsTableViewController.m */,
+				18C7C7EF1B44D85400DF0409 /* NewsTableViewController.xib */,
+			);
+			path = News;
+			sourceTree = "<group>";
+		};
+		18DD29831B44D50F00231E05 /* CommodityViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CommodityViewModel;
+			sourceTree = "<group>";
+		};
+		18DD29841B44D50F00231E05 /* MainViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MainViewModel;
+			sourceTree = "<group>";
+		};
+		18DD29851B44D50F00231E05 /* NewsViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NewsViewModel;
+			sourceTree = "<group>";
+		};
+		18DD29861B44D50F00231E05 /* SettingViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SettingViewModel;
+			sourceTree = "<group>";
+		};
+		18DD29871B44D50F00231E05 /* ShopViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ShopViewModel;
 			sourceTree = "<group>";
 		};
 		CD0DCAA4548E2371D7E182FD /* Frameworks */ = {
@@ -517,7 +557,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				18809C721B43BA76002D3548 /* shangpin_tabbar_icon@2x.png in Resources */,
-				18809C801B43BBD2002D3548 /* NewsTableViewController.xib in Resources */,
 				18809C691B43BA76002D3548 /* main_tabbar_icon@2x.png in Resources */,
 				18809C6C1B43BA76002D3548 /* news_tabbar_icon@2x.png in Resources */,
 				18809C541B438B61002D3548 /* MainTableViewController.xib in Resources */,
@@ -539,6 +578,7 @@
 				18809C7B1B43BBBB002D3548 /* CommodityViewController.xib in Resources */,
 				181620EE1B3D25AD0031C1F3 /* Images.xcassets in Resources */,
 				18809C6B1B43BA76002D3548 /* news_tabbar_icon.png in Resources */,
+				18C7C7F11B44D85400DF0409 /* NewsTableViewController.xib in Resources */,
 				230BD7C71B441BBF00652FF8 /* location_icon.png in Resources */,
 				18809C751B43BA76002D3548 /* shop_tabbar_icon@2x.png in Resources */,
 				18809C8A1B43BBFC002D3548 /* ShopTableViewController.xib in Resources */,
@@ -600,9 +640,9 @@
 				18809C901B43E9CB002D3548 /* AdScrollView.m in Sources */,
 				18809C3F1B4387B1002D3548 /* JsonTools.m in Sources */,
 				18809C8D1B43C88F002D3548 /* MainHeaderView.m in Sources */,
-				18809C7F1B43BBD2002D3548 /* NewsTableViewController.m in Sources */,
 				18809C571B4396B1002D3548 /* MBProgressHUD+LXProgressHUD.m in Sources */,
 				18809C461B43883F002D3548 /* UserModel.m in Sources */,
+				18C7C7F01B44D85400DF0409 /* NewsTableViewController.m in Sources */,
 				18809C4A1B4388E3002D3548 /* LXMainViewController.m in Sources */,
 				18809C531B438B61002D3548 /* MainTableViewController.m in Sources */,
 				18809C891B43BBFC002D3548 /* ShopTableViewController.m in Sources */,

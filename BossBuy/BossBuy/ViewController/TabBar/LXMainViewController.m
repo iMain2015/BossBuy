@@ -70,7 +70,7 @@
     
     newsNavigationController.tabBarItem = newsTabBarItem;
     //个人中心
-    UINavigationController *settingNavigationController= [[UINavigationController alloc]initWithRootViewController:_newsTableViewController];
+    UINavigationController *settingNavigationController= [[UINavigationController alloc]initWithRootViewController:_settingViewController];
     
     UITabBarItem *settingTabBarItem = [[UITabBarItem alloc]initWithTitle:@"个人中心" image:[UIImage imageNamed:@"setting_tabbar_icon"] tag:5];
     
