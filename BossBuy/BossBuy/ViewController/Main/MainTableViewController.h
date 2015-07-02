@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "MainTableViewControllerViewModel.h"
 @interface MainTableViewController : UITableViewController
-
+@property(nonatomic,strong)MainTableViewControllerViewModel *viewModel;
 @end

@@ -11,11 +11,29 @@
 #import "Constants.h"
 #import "AdScrollView.h"
 #import <UIBarButtonItem+BlocksKit.h>
+#import "CommodityRecommendTableViewCell.h"
+
+static NSString *const kCell = @"CRMCELL";
+
 @interface MainTableViewController ()
 
 @end
 
 @implementation MainTableViewController
+
+-(void)dealloc{
+
+    _viewModel = nil;
+}
+
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        _viewModel = [[MainTableViewControllerViewModel alloc]init];
+    }
+    return self;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -27,9 +45,19 @@
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 
     
+ 
+    [self setTableView];
+    
+
+    [self setBarButton];
+}
+
+
+-(void)setTableView{
+
     MainHeaderView *mainHeaderView= [[MainHeaderView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 100)];
     mainHeaderView.buttonBlock = ^(UIButton*button){
-    
+        
         NSLog(@"%ld",button.tag);
         
     };
@@ -38,20 +66,25 @@
     adScrollView.imageArray = @[@"https://www.baidu.com/img/bdlogo.png",@"http://news.baidu.com/resource/img/logo_news_276_88.png?date=20150104"];
     
     adScrollView.adClick = ^(UIImageView*imageView){
-    
+        
         NSLog(@"图片=%ld",imageView.tag);
     };
     
     UIView *headView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 300)];
-
+    
     [headView addSubview:mainHeaderView];
     
     [headView addSubview:adScrollView];
     
     self.tableView.tableHeaderView = headView;
     
-
-    [self setBarButton];
+    
+    UINib *cellnib=[UINib nibWithNibName:@"CommodityRecommendTableViewCell" bundle:nil];
+   
+    [self.tableView registerNib:cellnib forCellReuseIdentifier:kCell];
+    
+    self.tableView.rowHeight = 80;
+   
 }
 
 -(void)setBarButton{
@@ -82,27 +115,21 @@
 
 #pragma mark - Table view data source
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Potentially incomplete method implementation.
-    // Return the number of sections.
-    return 0;
-}
+
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete method implementation.
+
     // Return the number of rows in the section.
-    return 0;
+    return 10;
 }
 
-/*
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
-    
-    // Configure the cell...
-    
-    return cell;
+   
+   
+    return [_viewModel getCellForRowAtIndexPath:tableView cellForRowAtIndexPath:indexPath];
 }
-*/
+
 
 /*
 // Override to support conditional editing of the table view.
