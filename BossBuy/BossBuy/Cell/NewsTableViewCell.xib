@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7702" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="NewsCell" id="KGk-i7-Jjw" customClass="NewsTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="t9H-O0-gwK">
+                        <rect key="frame" x="8" y="5" width="70" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="SQ8-Z0-Tbf"/>
+                            <constraint firstAttribute="width" constant="70" id="kES-Zs-pJs"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="五道口俱乐部" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Iz-CD-ZHV">
+                        <rect key="frame" x="81" y="5" width="231" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="PHh-tU-YOG"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="小米公司正式成立于2010年4月，是一家专注于高端智能手机、互联网电视以及智能家居生态链建设的创新型科技企业。" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kKB-Xi-3ls">
+                        <rect key="frame" x="81" y="20" width="231" height="31"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="31" id="cWT-G7-u6p"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="kKB-Xi-3ls" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="1iK-HI-pkx"/>
+                    <constraint firstItem="t9H-O0-gwK" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="63Z-fE-GDK"/>
+                    <constraint firstItem="7Iz-CD-ZHV" firstAttribute="leading" secondItem="t9H-O0-gwK" secondAttribute="trailing" constant="3" id="Fky-A5-eTD"/>
+                    <constraint firstAttribute="trailing" secondItem="7Iz-CD-ZHV" secondAttribute="trailing" constant="8" id="Qbf-Sr-xRb"/>
+                    <constraint firstAttribute="trailing" secondItem="kKB-Xi-3ls" secondAttribute="trailing" constant="8" id="XWQ-cd-trw"/>
+                    <constraint firstItem="kKB-Xi-3ls" firstAttribute="leading" secondItem="t9H-O0-gwK" secondAttribute="trailing" constant="3" id="ZXg-tA-g2o"/>
+                    <constraint firstItem="t9H-O0-gwK" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="h2K-cr-EUb"/>
+                    <constraint firstItem="7Iz-CD-ZHV" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="v9F-OD-MxJ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="newsImageView" destination="t9H-O0-gwK" id="xDM-0v-hC4"/>
+                <outlet property="newsSubtitleLable" destination="kKB-Xi-3ls" id="eOm-lM-YiB"/>
+                <outlet property="newsTitleLable" destination="7Iz-CD-ZHV" id="C3U-q9-9MD"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>
