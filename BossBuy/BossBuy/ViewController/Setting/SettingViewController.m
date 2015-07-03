@@ -149,7 +149,7 @@
             SettingModel *settingModel = _settingArray[indexPath.row];
             cell.settingNameLable.text =settingModel.settingName;
             
-            
+             cell.settingImageView.image  =[UIImage imageNamed:settingModel.settingIcon];
         }
            
             break;
@@ -157,6 +157,7 @@
         {
             SettingModel *settingModel = _settingArray[indexPath.row+4];
             cell.settingNameLable.text =settingModel.settingName;
+            cell.settingImageView.image  =[UIImage imageNamed:settingModel.settingIcon];
         }
             
             break;

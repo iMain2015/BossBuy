@@ -6,59 +6,59 @@
 		<key>settingName</key>
 		<string>商铺收藏</string>
 		<key>settingIcon</key>
-		<string>xxx.png</string>
+		<string>main_tabbar_icon.png</string>
 	</dict>
     
     <dict>
         <key>settingName</key>
         <string>咨询收藏</string>
         <key>settingIcon</key>
-        <string>xxx.png</string>
+        <string>main_tabbar_icon.png</string>
     </dict>
     
     <dict>
         <key>settingName</key>
         <string>产品收藏</string>
         <key>settingIcon</key>
-        <string>xxx.png</string>
+        <string>main_tabbar_icon.png</string>
     </dict>
     
     <dict>
         <key>settingName</key>
         <string>修改密码</string>
         <key>settingIcon</key>
-        <string>xxx.png</string>
+        <string>main_tabbar_icon.png</string>
     </dict>
     
     <dict>
         <key>settingName</key>
         <string>通知消息</string>
         <key>settingIcon</key>
-        <string>xxx.png</string>
+        <string>main_tabbar_icon.png</string>
     </dict>
     <dict>
         <key>settingName</key>
         <string>关于我们</string>
         <key>settingIcon</key>
-        <string>xxx.png</string>
+        <string>main_tabbar_icon.png</string>
     </dict>
     <dict>
         <key>settingName</key>
         <string>在线反馈</string>
         <key>settingIcon</key>
-        <string>xxx.png</string>
+        <string>main_tabbar_icon.png</string>
     </dict>
     <dict>
         <key>settingName</key>
         <string>基本设置</string>
         <key>settingIcon</key>
-        <string>xxx.png</string>
+        <string>main_tabbar_icon.png</string>
     </dict>
     <dict>
         <key>settingName</key>
         <string>版本信息</string>
         <key>settingIcon</key>
-        <string>xxx.png</string>
+        <string>main_tabbar_icon.png</string>
     </dict>
     
 </array>
