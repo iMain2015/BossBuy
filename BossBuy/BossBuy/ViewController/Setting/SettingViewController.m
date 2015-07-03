@@ -130,12 +130,7 @@
         cell = [[SettingTableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
     }
     
-    
-    
-    
-    NSLog(@"%ld",indexPath.row);
-    
-    
+
     
     switch (indexPath.section) {
         case 0:
