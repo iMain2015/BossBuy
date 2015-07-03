@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "ShopViewControllerViewModel.h"
 @interface ShopViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
+
+@property(nonatomic,strong)ShopViewControllerViewModel *viewModel;
 @end
