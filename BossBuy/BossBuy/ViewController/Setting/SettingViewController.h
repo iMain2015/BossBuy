@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface SettingViewController : UITableViewController
-
+@property(nonatomic,strong)NSMutableArray * settingArray;
 @end

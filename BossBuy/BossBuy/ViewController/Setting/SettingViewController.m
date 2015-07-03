@@ -7,6 +7,9 @@
 //
 
 #import "SettingViewController.h"
+#import "SettingTableViewCell.h"
+#import "SettingModel.h"
+#import "SettingHeaderTableViewCell.h"
 
 @interface SettingViewController ()
 
@@ -16,12 +19,35 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-     self.title = @"个人中心";
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
     
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    self.title = @"个人中心";
+    
+    _settingArray = [NSMutableArray arrayWithCapacity:10];
+    
+    NSString *plistPath = [[NSBundle mainBundle] pathForResource:@"Setting" ofType:@"plist"];
+    NSMutableArray *plistArr = [[NSMutableArray alloc] initWithContentsOfFile:plistPath];
+    
+    for (NSDictionary *dic in plistArr) {
+        SettingModel *settingModel  = [[SettingModel alloc]init];
+        settingModel.settingName  = dic[@"settingName"];
+        settingModel.settingIcon = dic[@"settingIcon"];
+        
+        NSLog(@"%@",dic[@"settingName"]);
+        
+        [_settingArray addObject:settingModel];
+    }
+    
+
+    UINib *cellnib=[UINib nibWithNibName:@"SettingTableViewCell" bundle:nil];
+    
+    [self.tableView registerNib:cellnib forCellReuseIdentifier:@"SettingCell"];
+    
+    //HeadCell
+    
+    UINib *headerCellnib=[UINib nibWithNibName:@"SettingHeaderTableViewCell" bundle:nil];
+    
+    [self.tableView registerNib:headerCellnib forCellReuseIdentifier:@"HearerCell"];
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -31,27 +57,125 @@
 
 #pragma mark - Table view data source
 
+
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    if (indexPath.section==0) {
+        return 165;
+    }else{
+        return 44;
+    }
+}
+
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Potentially incomplete method implementation.
+
     // Return the number of sections.
-    return 0;
+    return 3;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete method implementation.
+
     // Return the number of rows in the section.
+    
+    switch (section) {
+        case 0:
+            
+            return 1;
+            break;
+            
+        case 1:
+            return 4;
+            break;
+            
+        case 2:
+            return 5;
+            break;
+            
+        default:
+            break;
+    }
+    
+
     return 0;
+    
 }
 
-/*
+
+
+- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section{
+    return 20;
+}
+
+
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+
     
-    // Configure the cell...
+    if (indexPath.section==0) {
+        static NSString *CellIdentifier = @"HearerCell";
+         SettingHeaderTableViewCell*cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+        if (cell == nil) {
+            cell = [[SettingHeaderTableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
+        }
+        
+        [cell.loginButton addTarget:self action:@selector(loginButtonClickAction:) forControlEvents:UIControlEventTouchUpInside];
+        
+        
+        return cell;
+    }
+    
+    
+    static NSString *CellIdentifier = @"SettingCell";
+    SettingTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    if (cell == nil) {
+        cell = [[SettingTableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
+    }
+    
+    
+    
+    
+    NSLog(@"%ld",indexPath.row);
+    
+    
+    
+    switch (indexPath.section) {
+        case 0:
+        {
+           
+        }
+            
+            break;
+        case 1:
+        {
+            SettingModel *settingModel = _settingArray[indexPath.row];
+            cell.settingNameLable.text =settingModel.settingName;
+            
+            
+        }
+           
+            break;
+        case 2:
+        {
+            SettingModel *settingModel = _settingArray[indexPath.row+4];
+            cell.settingNameLable.text =settingModel.settingName;
+        }
+            
+            break;
+        default:
+            break;
+    }
+    
     
     return cell;
 }
-*/
+
+
+-(void)loginButtonClickAction:(id)sender{
+    
+    UIButton *button = (UIButton*)sender;
+    
+    NSLog(@"xxxxxx");
+}
+
 
 /*
 // Override to support conditional editing of the table view.
