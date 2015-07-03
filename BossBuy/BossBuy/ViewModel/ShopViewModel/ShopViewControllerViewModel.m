@@ -7,7 +7,8 @@
 //
 
 #import "ShopViewControllerViewModel.h"
-
+#import "ShopTableViewCell.h"
+#import "Constants.h"
 @implementation ShopViewControllerViewModel
 
 -(void)dealloc{
@@ -15,6 +16,7 @@
     _shopCategotyOther = nil;
     _shopCategotyOther = nil;
     _categoryArray = nil;
+    _shopListData = nil;
     
 }
 
@@ -28,7 +30,7 @@
          _categoryArray = [[NSArray alloc]init];
          */
         
-        
+        _shopListData = [NSMutableArray arrayWithCapacity:10];
         _categoryArray = @[
                            [[CategoryModel alloc]initWithName:@"电脑办公" categoryID:@"1" categoryImage:@""],
                            [[CategoryModel alloc]initWithName:@"手机数码" categoryID:@"2" categoryImage:@""],
@@ -52,4 +54,40 @@
     }
     return self;
 }
+
+/**
+ *  返回Cell
+ *
+ *  @param tableView tableView
+ *  @param indexPath indexPath
+ *
+ *  @return Cell
+ */
+-(UITableViewCell*)getCellForRowAtIndexPath:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+
+    ShopTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:kShopCellIdentifier];
+    if (cell == nil) {
+        cell = [[ShopTableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:kShopCellIdentifier];
+    }
+    
+    [cell.shopImageView sd_setImageWithURL:[NSURL URLWithString:@"http://i3.mifile.cn/a4/T19vJgBKCT1RXrhCrK.jpg"]];
+    
+    return cell;
+
+}
+
+
+/**
+ *  返回行数
+ *
+ *  @return 返回行数
+ */
+-(NSInteger)getNumberOfRowsInSection{
+
+    return _shopListData.count;
+}
+
+
+
+
 @end

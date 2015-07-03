@@ -10,6 +10,7 @@
 #import <UIBarButtonItem+BlocksKit.h>
 #import "ChooseCategoryView.h"
 #import "Constants.h"
+#import "ShopTableViewCell.h"
 @interface ShopViewController ()<CategoryDelegate,UITableViewDataSource,UITableViewDelegate>
 
 @property(nonatomic,strong)ChooseCategoryView *chooseView;
@@ -44,14 +45,24 @@
     _chooseView.shopCategoryArray = _viewModel.shopCategoryArray;
     
     [self.view addSubview:_chooseView];
-    
-    
-    
 
     
     
-    _tableView.delegate = self;
     
+    [self setInitTableView];
+    
+}
+
+
+-(void)setInitTableView{
+    _tableView.delegate = self;
+    _tableView.dataSource = self;
+    
+    _tableView.rowHeight = 80;
+    
+    UINib *cellnib=[UINib nibWithNibName:@"ShopTableViewCell" bundle:nil];
+    
+    [self.tableView registerNib:cellnib forCellReuseIdentifier:kShopCellIdentifier];
 }
 
 
@@ -123,18 +134,8 @@
 // Cell gets various attributes set automatically based on table (separators) and data source (accessory views, editing controls)
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    static NSString *CellIdentifier = @"Cell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-    if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
-    }
-    
-    
-    // Configure the cell...
-    cell.textLabel.text =@"xxxx";
-    
-    
-    return cell;
+  
+    return [_viewModel getCellForRowAtIndexPath:tableView cellForRowAtIndexPath:indexPath];
 }
 
 

@@ -50,6 +50,8 @@
 		18809C901B43E9CB002D3548 /* AdScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18809C8F1B43E9CB002D3548 /* AdScrollView.m */; };
 		188849971B46165400AA10E8 /* CategoryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 188849961B46165400AA10E8 /* CategoryModel.m */; };
 		1888499A1B461D3100AA10E8 /* ShopViewControllerViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 188849991B461D3100AA10E8 /* ShopViewControllerViewModel.m */; };
+		188849A11B463B6900AA10E8 /* ShopTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1888499F1B463B6900AA10E8 /* ShopTableViewCell.m */; };
+		188849A21B463B6900AA10E8 /* ShopTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 188849A01B463B6900AA10E8 /* ShopTableViewCell.xib */; };
 		188EE07E1B44DCA000913181 /* MainTableViewControllerViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 188EE07D1B44DCA000913181 /* MainTableViewControllerViewModel.m */; };
 		188EE0821B44DD9F00913181 /* CommodityRecommendTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 188EE0801B44DD9F00913181 /* CommodityRecommendTableViewCell.m */; };
 		188EE0831B44DD9F00913181 /* CommodityRecommendTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 188EE0811B44DD9F00913181 /* CommodityRecommendTableViewCell.xib */; };
@@ -143,6 +145,9 @@
 		188849961B46165400AA10E8 /* CategoryModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryModel.m; sourceTree = "<group>"; };
 		188849981B461D3100AA10E8 /* ShopViewControllerViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShopViewControllerViewModel.h; sourceTree = "<group>"; };
 		188849991B461D3100AA10E8 /* ShopViewControllerViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShopViewControllerViewModel.m; sourceTree = "<group>"; };
+		1888499E1B463B6900AA10E8 /* ShopTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShopTableViewCell.h; sourceTree = "<group>"; };
+		1888499F1B463B6900AA10E8 /* ShopTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShopTableViewCell.m; sourceTree = "<group>"; };
+		188849A01B463B6900AA10E8 /* ShopTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShopTableViewCell.xib; sourceTree = "<group>"; };
 		188EE07C1B44DCA000913181 /* MainTableViewControllerViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTableViewControllerViewModel.h; sourceTree = "<group>"; };
 		188EE07D1B44DCA000913181 /* MainTableViewControllerViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTableViewControllerViewModel.m; sourceTree = "<group>"; };
 		188EE07F1B44DD9F00913181 /* CommodityRecommendTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommodityRecommendTableViewCell.h; sourceTree = "<group>"; };
@@ -289,6 +294,9 @@
 				188EE0891B44ECC400913181 /* CommoditySubCategoryCollectionViewCell.h */,
 				188EE08A1B44ECC400913181 /* CommoditySubCategoryCollectionViewCell.m */,
 				188EE08B1B44ECC400913181 /* CommoditySubCategoryCollectionViewCell.xib */,
+				1888499E1B463B6900AA10E8 /* ShopTableViewCell.h */,
+				1888499F1B463B6900AA10E8 /* ShopTableViewCell.m */,
+				188849A01B463B6900AA10E8 /* ShopTableViewCell.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -628,6 +636,7 @@
 				18809C741B43BA76002D3548 /* shop_tabbar_icon.png in Resources */,
 				181620F11B3D25AD0031C1F3 /* LaunchScreen.xib in Resources */,
 				18809C7B1B43BBBB002D3548 /* CommodityViewController.xib in Resources */,
+				188849A21B463B6900AA10E8 /* ShopTableViewCell.xib in Resources */,
 				181620EE1B3D25AD0031C1F3 /* Images.xcassets in Resources */,
 				18809C6B1B43BA76002D3548 /* news_tabbar_icon.png in Resources */,
 				18C7C7F11B44D85400DF0409 /* NewsTableViewController.xib in Resources */,
@@ -687,6 +696,7 @@
 				18809C361B438745002D3548 /* Constants.m in Sources */,
 				188EE0821B44DD9F00913181 /* CommodityRecommendTableViewCell.m in Sources */,
 				18809C421B4387B1002D3548 /* ValidateTools.m in Sources */,
+				188849A11B463B6900AA10E8 /* ShopTableViewCell.m in Sources */,
 				181621121B3D281E0031C1F3 /* AppDelegate.m in Sources */,
 				188EE0931B452A7500913181 /* ChooseCategoryView.m in Sources */,
 				181620E61B3D25AD0031C1F3 /* BossBuy.xcdatamodeld in Sources */,
