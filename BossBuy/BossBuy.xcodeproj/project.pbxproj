@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		181620C01B4A30F50022177B /* ShopInfoTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 181620BE1B4A30F50022177B /* ShopInfoTableViewController.m */; };
+		181620C11B4A30F50022177B /* ShopInfoTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 181620BF1B4A30F50022177B /* ShopInfoTableViewController.xib */; };
+		181620C41B4A32DB0022177B /* ShopInfoHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 181620C31B4A32DB0022177B /* ShopInfoHeaderView.m */; };
+		181620C81B4A52310022177B /* default_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 181620C71B4A52310022177B /* default_icon.png */; };
+		181620CB1B4A52EE0022177B /* ShopInfoTableViewControllerViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 181620CA1B4A52EE0022177B /* ShopInfoTableViewControllerViewModel.m */; };
 		181620E01B3D25AD0031C1F3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 181620DF1B3D25AD0031C1F3 /* main.m */; };
 		181620E61B3D25AD0031C1F3 /* BossBuy.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 181620E41B3D25AD0031C1F3 /* BossBuy.xcdatamodeld */; };
 		181620E91B3D25AD0031C1F3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 181620E81B3D25AD0031C1F3 /* ViewController.m */; };
@@ -72,6 +77,8 @@
 		188EE0931B452A7500913181 /* ChooseCategoryView.m in Sources */ = {isa = PBXBuildFile; fileRef = 188EE0921B452A7500913181 /* ChooseCategoryView.m */; };
 		18C7C7F01B44D85400DF0409 /* NewsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C7C7EE1B44D85400DF0409 /* NewsTableViewController.m */; };
 		18C7C7F11B44D85400DF0409 /* NewsTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18C7C7EF1B44D85400DF0409 /* NewsTableViewController.xib */; };
+		18CF73B71B4B6A5B00C0AF0D /* ShopCommondityCategoryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CF73B51B4B6A5B00C0AF0D /* ShopCommondityCategoryTableViewCell.m */; };
+		18CF73B81B4B6A5B00C0AF0D /* ShopCommondityCategoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18CF73B61B4B6A5B00C0AF0D /* ShopCommondityCategoryTableViewCell.xib */; };
 		230BD7C71B441BBF00652FF8 /* location_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 230BD7C41B441BBF00652FF8 /* location_icon.png */; };
 		230BD7C81B441BBF00652FF8 /* location_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 230BD7C51B441BBF00652FF8 /* location_icon@2x.png */; };
 		230BD7C91B441BBF00652FF8 /* location_icon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 230BD7C61B441BBF00652FF8 /* location_icon@3x.png */; };
@@ -89,6 +96,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		181620BD1B4A30F50022177B /* ShopInfoTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShopInfoTableViewController.h; sourceTree = "<group>"; };
+		181620BE1B4A30F50022177B /* ShopInfoTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShopInfoTableViewController.m; sourceTree = "<group>"; };
+		181620BF1B4A30F50022177B /* ShopInfoTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShopInfoTableViewController.xib; sourceTree = "<group>"; };
+		181620C21B4A32DB0022177B /* ShopInfoHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShopInfoHeaderView.h; sourceTree = "<group>"; };
+		181620C31B4A32DB0022177B /* ShopInfoHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShopInfoHeaderView.m; sourceTree = "<group>"; };
+		181620C71B4A52310022177B /* default_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = default_icon.png; sourceTree = "<group>"; };
+		181620C91B4A52EE0022177B /* ShopInfoTableViewControllerViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShopInfoTableViewControllerViewModel.h; sourceTree = "<group>"; };
+		181620CA1B4A52EE0022177B /* ShopInfoTableViewControllerViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShopInfoTableViewControllerViewModel.m; sourceTree = "<group>"; };
 		181620DA1B3D25AD0031C1F3 /* BossBuy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BossBuy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		181620DE1B3D25AD0031C1F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		181620DF1B3D25AD0031C1F3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -189,6 +204,9 @@
 		18C7C7ED1B44D85400DF0409 /* NewsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsTableViewController.h; sourceTree = "<group>"; };
 		18C7C7EE1B44D85400DF0409 /* NewsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsTableViewController.m; sourceTree = "<group>"; };
 		18C7C7EF1B44D85400DF0409 /* NewsTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewsTableViewController.xib; sourceTree = "<group>"; };
+		18CF73B41B4B6A5B00C0AF0D /* ShopCommondityCategoryTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShopCommondityCategoryTableViewCell.h; sourceTree = "<group>"; };
+		18CF73B51B4B6A5B00C0AF0D /* ShopCommondityCategoryTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShopCommondityCategoryTableViewCell.m; sourceTree = "<group>"; };
+		18CF73B61B4B6A5B00C0AF0D /* ShopCommondityCategoryTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShopCommondityCategoryTableViewCell.xib; sourceTree = "<group>"; };
 		230BD7C41B441BBF00652FF8 /* location_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = location_icon.png; sourceTree = "<group>"; };
 		230BD7C51B441BBF00652FF8 /* location_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "location_icon@2x.png"; sourceTree = "<group>"; };
 		230BD7C61B441BBF00652FF8 /* location_icon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "location_icon@3x.png"; sourceTree = "<group>"; };
@@ -330,6 +348,9 @@
 				188849BB1B46843600AA10E8 /* SettingHeaderTableViewCell.h */,
 				188849BC1B46843600AA10E8 /* SettingHeaderTableViewCell.m */,
 				188849BD1B46843600AA10E8 /* SettingHeaderTableViewCell.xib */,
+				18CF73B41B4B6A5B00C0AF0D /* ShopCommondityCategoryTableViewCell.h */,
+				18CF73B51B4B6A5B00C0AF0D /* ShopCommondityCategoryTableViewCell.m */,
+				18CF73B61B4B6A5B00C0AF0D /* ShopCommondityCategoryTableViewCell.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -352,6 +373,8 @@
 				18809C8F1B43E9CB002D3548 /* AdScrollView.m */,
 				188EE0911B452A7500913181 /* ChooseCategoryView.h */,
 				188EE0921B452A7500913181 /* ChooseCategoryView.m */,
+				181620C21B4A32DB0022177B /* ShopInfoHeaderView.h */,
+				181620C31B4A32DB0022177B /* ShopInfoHeaderView.m */,
 			);
 			path = CustomView;
 			sourceTree = "<group>";
@@ -430,6 +453,9 @@
 				186C74751B45381B001BB81D /* ShopViewController.h */,
 				186C74761B45381B001BB81D /* ShopViewController.m */,
 				186C74771B45381B001BB81D /* ShopViewController.xib */,
+				181620BD1B4A30F50022177B /* ShopInfoTableViewController.h */,
+				181620BE1B4A30F50022177B /* ShopInfoTableViewController.m */,
+				181620BF1B4A30F50022177B /* ShopInfoTableViewController.xib */,
 			);
 			path = Shop;
 			sourceTree = "<group>";
@@ -485,6 +511,7 @@
 		18809C581B43BA76002D3548 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				181620C71B4A52310022177B /* default_icon.png */,
 				230BD7C41B441BBF00652FF8 /* location_icon.png */,
 				230BD7C51B441BBF00652FF8 /* location_icon@2x.png */,
 				230BD7C61B441BBF00652FF8 /* location_icon@3x.png */,
@@ -564,6 +591,8 @@
 			children = (
 				188849981B461D3100AA10E8 /* ShopViewControllerViewModel.h */,
 				188849991B461D3100AA10E8 /* ShopViewControllerViewModel.m */,
+				181620C91B4A52EE0022177B /* ShopInfoTableViewControllerViewModel.h */,
+				181620CA1B4A52EE0022177B /* ShopInfoTableViewControllerViewModel.m */,
 			);
 			path = ShopViewModel;
 			sourceTree = "<group>";
@@ -672,6 +701,7 @@
 				188849AF1B46628A00AA10E8 /* SettingTableViewCell.xib in Resources */,
 				188EE0881B44EBD400913181 /* CommodityCategoryTableViewCell.xib in Resources */,
 				18809C701B43BA76002D3548 /* setting_tabbar_icon@3x.png in Resources */,
+				181620C11B4A30F50022177B /* ShopInfoTableViewController.xib in Resources */,
 				181620EC1B3D25AD0031C1F3 /* Main.storyboard in Resources */,
 				18809C6E1B43BA76002D3548 /* setting_tabbar_icon.png in Resources */,
 				18809C6D1B43BA76002D3548 /* news_tabbar_icon@3x.png in Resources */,
@@ -683,10 +713,12 @@
 				18809C711B43BA76002D3548 /* shangpin_tabbar_icon.png in Resources */,
 				18809C761B43BA76002D3548 /* shop_tabbar_icon@3x.png in Resources */,
 				18809C741B43BA76002D3548 /* shop_tabbar_icon.png in Resources */,
+				181620C81B4A52310022177B /* default_icon.png in Resources */,
 				181620F11B3D25AD0031C1F3 /* LaunchScreen.xib in Resources */,
 				18809C7B1B43BBBB002D3548 /* CommodityViewController.xib in Resources */,
 				188849A21B463B6900AA10E8 /* ShopTableViewCell.xib in Resources */,
 				181620EE1B3D25AD0031C1F3 /* Images.xcassets in Resources */,
+				18CF73B81B4B6A5B00C0AF0D /* ShopCommondityCategoryTableViewCell.xib in Resources */,
 				18809C6B1B43BA76002D3548 /* news_tabbar_icon.png in Resources */,
 				18C7C7F11B44D85400DF0409 /* NewsTableViewController.xib in Resources */,
 				230BD7C71B441BBF00652FF8 /* location_icon.png in Resources */,
@@ -752,6 +784,7 @@
 				188849BE1B46843600AA10E8 /* SettingHeaderTableViewCell.m in Sources */,
 				181620E61B3D25AD0031C1F3 /* BossBuy.xcdatamodeld in Sources */,
 				18809C401B4387B1002D3548 /* NetWorkTools.m in Sources */,
+				181620CB1B4A52EE0022177B /* ShopInfoTableViewControllerViewModel.m in Sources */,
 				188849AA1B465A6A00AA10E8 /* NewsTableViewControllerViewModel.m in Sources */,
 				18809C901B43E9CB002D3548 /* AdScrollView.m in Sources */,
 				18809C3F1B4387B1002D3548 /* JsonTools.m in Sources */,
@@ -759,10 +792,13 @@
 				18809C8D1B43C88F002D3548 /* MainHeaderView.m in Sources */,
 				18809C571B4396B1002D3548 /* MBProgressHUD+LXProgressHUD.m in Sources */,
 				18809C461B43883F002D3548 /* UserModel.m in Sources */,
+				181620C41B4A32DB0022177B /* ShopInfoHeaderView.m in Sources */,
 				18C7C7F01B44D85400DF0409 /* NewsTableViewController.m in Sources */,
 				18809C4A1B4388E3002D3548 /* LXMainViewController.m in Sources */,
+				181620C01B4A30F50022177B /* ShopInfoTableViewController.m in Sources */,
 				18809C531B438B61002D3548 /* MainTableViewController.m in Sources */,
 				181620E91B3D25AD0031C1F3 /* ViewController.m in Sources */,
+				18CF73B71B4B6A5B00C0AF0D /* ShopCommondityCategoryTableViewCell.m in Sources */,
 				18809C411B4387B1002D3548 /* UserTools.m in Sources */,
 				188849971B46165400AA10E8 /* CategoryModel.m in Sources */,
 				188EE0901B4503E800913181 /* CommodityViewControllerViewModel.m in Sources */,

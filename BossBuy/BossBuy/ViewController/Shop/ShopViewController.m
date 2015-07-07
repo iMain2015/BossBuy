@@ -11,6 +11,7 @@
 #import "ChooseCategoryView.h"
 #import "Constants.h"
 #import "ShopTableViewCell.h"
+#import "ShopInfoTableViewController.h"
 @interface ShopViewController ()<CategoryDelegate,UITableViewDataSource,UITableViewDelegate>
 
 @property(nonatomic,strong)ChooseCategoryView *chooseView;
@@ -136,6 +137,15 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
   
     return [_viewModel getCellForRowAtIndexPath:tableView cellForRowAtIndexPath:indexPath];
+}
+
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    ShopInfoTableViewController *shopColl = [[ShopInfoTableViewController alloc]init];
+    
+    [self.navigationController pushViewController:shopColl animated:YES];
+
 }
 
 
